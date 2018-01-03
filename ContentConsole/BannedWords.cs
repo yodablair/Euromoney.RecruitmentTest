@@ -11,6 +11,9 @@ namespace ContentConsole
         bool NegativeWordExistsInDatastore(string word);
         void InsertNegativeWordIntoDatastore(string word);
         string[] RetrieveNegativeWordsFromDatastore();
+        string FilterOutNegativeWords();
+        string FilterOutNegativeWord(string negativeWord);
+        long SumOfBannedWords();
     }
 
     public class BannedWords : INegativeWord
